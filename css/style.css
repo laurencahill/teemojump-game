@@ -1,0 +1,160 @@
+body {
+  background-color: #87d7be;
+  padding: 0;
+  text-align: center;
+}
+
+.game-intro {
+  display: flex;
+  flex-direction: row;
+  height: 15vw;
+  justify-content: center;
+}
+
+#audio {
+  align-self: center;
+  position: absolute;
+  left: 1vw;
+}
+
+
+
+.game-logo {
+  text-align: center;
+  background-color: #b4fde6;
+  border-radius:25px;
+  border-color: none;
+  width: 325px;
+  margin: 10px;
+}
+
+#canvas {
+  background-image: url('../images/canvas-bg.png');
+  border: 2px solid #2d1700;
+  height: 28vw;
+  background-repeat: repeat;
+  background-attachment: static;
+}
+
+.main-div {
+display: flex;
+justify-content: space-between;
+width: 99vw;
+margin: 0;
+
+}
+
+.left-div {
+display: flex;
+align-items: center;
+background-color: #b4fde6;
+border-radius: 25px;
+font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+color: #5e2610;
+flex-direction: column;
+justify-content: space-between;
+width: 20vw;
+padding: 5px;
+}
+
+.health-bar {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+width: 200px;
+height: 20px;
+padding: 5px;
+background: #d7ff62;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+margin-top: 4vh;
+}
+
+.bar {
+background: #d77bc3;
+height: 10px;
+position: relative; 
+transition: width .5s linear;
+}
+
+#btn-start {
+background-image: linear-gradient(to bottom right, #d7ff62, #d77bc3);
+font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+font-size: 16px;
+font-weight: bold;
+color: #5e2610;
+box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+border-radius: 12px;
+outline: none;
+margin: 30px 0px 70px 0px;
+width: 200px;
+height: 3vw;
+}
+
+div + span {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+h5 {
+  font-size: 30px;
+  text-align: left;
+  margin: 0;
+  padding: 10px 0 10px 0;
+  }
+
+.health {
+  margin: 20px 0px 0px 0px;
+}
+
+.total-health{
+  display: inline;
+}
+
+.score {
+  margin: 30px 0px 0px 0px;
+}
+
+.total-score {
+  display: inline;
+}
+
+
+#game-board {
+text-align: center;
+margin: 50px;
+}
+
+.div-right {
+display: flex;
+background-color: #b4fde6;
+font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+font-size: 12px;
+font-weight: bold;
+color: #5e2610;
+justify-content: center;
+width: 20vw;
+border-radius: 25px;
+flex-direction: column;
+align-items: left;
+padding: 5px;
+}
+
+.mush-icon {
+  width: 15px;
+  padding: 0px 8px 0px 0px;
+}
+
+h4 {
+font-size: 30px;
+margin: 0;
+padding: 10px 0 10px 0;
+}
+
+ol {
+list-style-type: none;
+line-height: 3vw;
+text-align: left;
+padding: 15px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Teemo Jump</title>
+</head>
+<body>
+  <div class="game-intro">
+    <audio id="audio" controls loop><source src="./Audio/TeemoJumpMusic.mp3" type="audio/mpeg">Audio not supported</audio>
+    <img src="./images/game-logo.png" alt="game-logo" class="game-logo">
+  </div>
+  <div class="main-div">
+    <div class="left-div">
+      <h5>Timer: <span id="timer">00:00</span></h5>
+      <div>
+        <div class="health-bar">
+          <div class="bar" style="width: 100%">
+          </div>
+        </div>
+        <div>
+          <h5 class = "health">Health: <div class="total-health">100</div></h5>
+          <h5 class = "score">Score: <div class="total-score">0</div></h5>
+        </div>
+      </div>
+      <button id="btn-start">Start Game</button>
+    </div>
+    <canvas id="canvas" style = "background-position-x: 100%" width="800" height="400"></canvas>
+    <div class="div-right">
+      <h4>Scouts Code</h4>
+      <ol>
+        <li><img src="./images/mushroom-obstacle.png" class="mush-icon">Move with left + right arrow keys</li>
+        <li><img src="./images/mushroom-obstacle.png" class="mush-icon">Jump with spacebar</li>
+        <li><img src="./images/mushroom-obstacle.png" class="mush-icon">Collect the mushrooms</li>
+        <li><img src="./images/mushroom-obstacle.png" class="mush-icon">Avoid the saplings</li>
+        <li><img src="./images/mushroom-obstacle.png" class="mush-icon">Play until health reaches 0</li>
+        <li><img src="./images/mushroom-obstacle.png" class="mush-icon">SCORE HIGH, DON'T DIE!</li>
+      </ol>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="game.js"></script>
+</html>
