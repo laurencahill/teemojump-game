@@ -87,11 +87,13 @@ class Player {
             switch(number){
                 case 37:
                 if (this.x > 0) {
+                    this.img = 'images/teemo-player-left.png'
                     this.x -= 5;
                 }break;
                 case 39:
                 if (this.x < canvas.width-75){
                     this.x += 5;
+                    this.img = 'images/teemo-player.png'
                 }else{
                     this.x += 0;
                 }
@@ -179,13 +181,27 @@ function theTimer() {
     t = this.setTimeout(addTime, 1000);
 }
 
-//Audio play on start
+//Audio 
+//play on start
 function play(){
     let audio = document.getElementById('audio');
-    audio.play();
-
+        audio.play();
 }
-    
+
+//play/pause toggle
+let playPause = document.getElementById('play-pause');
+let btnImg = document.querySelector('#play-pause img')
+
+playPause.addEventListener('click', function() {
+    if(audio.paused === true) {
+        audio.play();
+        btnImg.src = "images/mushroom-obstacle.png";
+    } else if (audio.paused === false) {
+        audio.pause();
+        btnImg.src = "images/sapling-obstacle.png";
+    }
+})
+
 function startGame() {
     theGame = new Game();
 }
@@ -203,6 +219,9 @@ document.onkeydown = function(e) {
     e.preventDefault();
     var move = e.keyCode;
     if (move === 37 || move === 39){
+        theGame.player.movePlayer(move);
+    }
+    if (move === 40){
         theGame.player.movePlayer(move);
     }
     if (move === 32) {

@@ -9,7 +9,6 @@
 </head>
 <body>
   <div class="game-intro">
-    <audio id="audio" controls loop><source src="./Audio/TeemoJumpMusic.mp3" type="audio/mpeg">Audio not supported</audio>
     <img src="./images/game-logo.png" alt="game-logo" class="game-logo">
   </div>
   <div class="main-div">
@@ -18,14 +17,19 @@
       <div>
         <div class="health-bar">
           <div class="bar" style="width: 100%">
+            </div>
+          </div>
+          <div>
+            <h5 class = "health">Health: <div class="total-health">100</div></h5>
+            <h5 class = "score">Score: <div class="total-score">0</div></h5>
           </div>
         </div>
-        <div>
-          <h5 class = "health">Health: <div class="total-health">100</div></h5>
-          <h5 class = "score">Score: <div class="total-score">0</div></h5>
-        </div>
-      </div>
-      <button id="btn-start">Start Game</button>
+        <button id="btn-start">Start Game</button>
+        <div class="audio-div">
+          <h5 id="audio-bar">Music:</h5>
+          <audio id="audio" loop><source src="./Audio/TeemoJumpMusic.mp3" type="audio/mpeg">Audio not supported</audio>
+            <button id="play-pause">  <img src="./images/mushroom-obstacle.png" height="40px" width="40px"  alt="mushroom">   </button>
+        </div>           
     </div>
     <canvas id="canvas" style = "background-position-x: 100%" width="800" height="400"></canvas>
     <div class="div-right">

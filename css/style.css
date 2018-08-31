@@ -4,20 +4,11 @@ body {
   text-align: center;
 }
 
-.game-intro {
-  display: flex;
-  flex-direction: row;
-  height: 15vw;
-  justify-content: center;
-}
-
 #audio {
   align-self: center;
   position: absolute;
   left: 1vw;
 }
-
-
 
 .game-logo {
   text-align: center;
@@ -87,9 +78,18 @@ color: #5e2610;
 box-shadow: 0 6px rgba(0, 0, 0, 0.2);
 border-radius: 12px;
 outline: none;
-margin: 30px 0px 70px 0px;
+margin: 30px 0px 20px 0px;
 width: 200px;
 height: 3vw;
+}
+
+.audio-div {
+  display: flex;
+}
+#play-pause {
+  border: none;
+  background-color: #b4fde6;
+  outline: none;
 }
 
 div + span {
@@ -102,6 +102,10 @@ h5 {
   text-align: left;
   margin: 0;
   padding: 10px 0 10px 0;
+  }
+
+  #audio-bar {
+    padding-top: 0;
   }
 
 .health {
